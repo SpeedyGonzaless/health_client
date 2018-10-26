@@ -1,0 +1,34 @@
+{
+  "Drugs": [
+    {
+      "Name": "No-Spa",
+      "Company": "Sanofi",
+      "img": "https://i.ebayimg.com/images/g/nxUAAOSwpLdZ0PJX/s-l300.jpg",
+      "Description" : "huy1"
+    },
+    {
+      "Name": "Maalox",
+      "Company": "Sanofi",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31FLCt0shDL.jpg",
+      "Description" : "huy2"
+    },
+    {
+      "Name": "Xarelto",
+      "Company": "Bayer",
+      "img": "https://2f4izj3opteu3l5obc1sh0bb-wpengine.netdna-ssl.com/wp-content/uploads/sites/14/2016/11/Xarelto-Big-image-1.png",
+      "Description" : "huy3"
+    },
+    {
+      "Name": "Kagocel",
+      "Company": "Nearmedic",
+      "img": "http://sportwiki.to/images/e/ee/Kagocel.jpg",
+      "Description" : "huy4"
+    },
+    {
+      "Name": "Panangin",
+      "Company": "Gedeon Richter",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41rpBFslLkL._SY355_.jpg",
+      "Description" : "huyhuyhuyhuyhuyhuyhuyhuy"
+    }
+  ]
+}
