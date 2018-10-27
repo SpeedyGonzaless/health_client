@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.constraint.solver.Cache;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,7 +55,7 @@ public class ChatFragment  extends Fragment {
 //            contentView.setText(contentText);
 //            webView.loadData(contentText, "text/html; charset=utf-8", "utf-8");
 //        }
-        input = "TRESH";
+        input = String.valueOf(Chat.POWER);
 
         contentView.setText("Загрузка...");
         new ProgressTask().execute(zapros);
@@ -90,7 +91,38 @@ public class ChatFragment  extends Fragment {
                 first = false;
             }
             else {
-                Chat.textQ.setText(input);
+                if (input.contains("next_stage")){
+                    // Idem poluchat resultat
+                    if (input.contains("goto_results")) {
+                        String getResult = "http://68.183.104.168:8888/health_test_results/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + Chat.key + "%22,%20%22test_id%22:%20%22" + Chat.quest + "%7D";
+                        GO(getResult);
+                    }
+                    // Idem za drugim voprosom
+                    else{
+                        String sub = input.substring(26, input.length() - 3); // mb 2
+                        if (sub != "nan") {
+                            //Chat.number = Integer.parseInt(sub);
+                            Chat.number++;
+                            String getQuestion = "http://68.183.104.168:8888/health_test_get_question/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + Chat.key + "%22,%20%22test_id%22:%20%22" + Chat.quest + "%22,%20%22question_number%22:%20" + Chat.number + "%7D";
+                            GO(getQuestion);
+                        }
+                    }
+                }
+
+                else if (input.contains("question")) { // Otobrazenie voprossa
+                    input = Chat.getQuestion(input);
+                    Chat.textQ.setText(input);
+                }
+
+                // result
+                else if (input.contains("diagnosis")) { // Poluchenie res
+                    Chat.result = "Sorry, but you have " + input.substring(30, input.length() - 8);
+                    Chat.textQ.setText( Chat.result);
+                }
+
+                //if (!input.contains("question"))
+                //    Chat.textQ.setText( input);
+
             }
 
         }
