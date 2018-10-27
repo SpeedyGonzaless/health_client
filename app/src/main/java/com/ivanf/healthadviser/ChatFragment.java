@@ -25,7 +25,8 @@ public class ChatFragment  extends Fragment {
     WebView webView;
     static ChatFragment me;
     static public String input = "fasfas";
-    TextView question;
+    static boolean first = true;
+    public static String testId = "";
 
 
 
@@ -46,20 +47,18 @@ public class ChatFragment  extends Fragment {
         return view;
     }
 
-    public String GO(String zapros) {
+    public void GO(String zapros) {
 
         // если данные ранее были загружены
-        if(contentText!=null){
-            contentView.setText(contentText);
-            webView.loadData(contentText, "text/html; charset=utf-8", "utf-8");
-        }
+//        if(contentText!=null){
+//            contentView.setText(contentText);
+//            webView.loadData(contentText, "text/html; charset=utf-8", "utf-8");
+//        }
+        input = "TRESH";
 
-        if(contentText==null){
-            contentView.setText("Загрузка...");
-            new ProgressTask().execute(zapros);
-        }
+        contentView.setText("Загрузка...");
+        new ProgressTask().execute(zapros);
 
-        return input;
     }
 
     private class ProgressTask extends AsyncTask<String, Void, String> {
@@ -84,9 +83,16 @@ public class ChatFragment  extends Fragment {
             webView.loadData(content, "text/html; charset=utf-8", "utf-8");
 
             input = content;
-            question.setText(input);
-            Toast.makeText(getActivity(), content, Toast.LENGTH_SHORT)
-                    .show();
+            if (first)
+            {
+                input = input.substring(28, input.length() - 8);
+                Chat.quest = input;
+                first = false;
+            }
+            else {
+                Chat.textQ.setText(input);
+            }
+
         }
 
         private String getContent(String path) throws IOException {
