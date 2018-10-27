@@ -17,11 +17,16 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
             android:text="You have no recommendation from the doctor yet"
             android:textAlignment="center"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="9dp"
             tools:layout_editor_absoluteY="29dp" />
     </LinearLayout>
+
+    <ListView android:id="@+id/recipeList"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
 
 </android.support.constraint.ConstraintLayout>

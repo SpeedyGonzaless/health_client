@@ -13,6 +13,7 @@ public class Drag {
         this.capital=capital;
         this.flagResource=flag;
         this.Descr=Descr;
+
     }
 
     public String getName() {

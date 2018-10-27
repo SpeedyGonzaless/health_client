@@ -29,9 +29,16 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -308,13 +315,21 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         @Override
         protected Boolean doInBackground(Void... params) {
 
+            String content;
 
             try {
+                //content = getContent("http://68.183.104.168:8888/connect/ ");
                 // Simulate network access.
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 return false;
             }
+//            }  catch (IOException ex){
+//                content = ex.getMessage();
+//            }
+
+//            Toast.makeText(getApplicationContext(), content,
+//                    Toast.LENGTH_SHORT).show();
 
             Intent activityMainActivity;
             activityMainActivity = new Intent(LoginActivity.this, MainActivity.class);
@@ -351,6 +366,28 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = null;
             showProgress(false);
         }
+
+//        private String getContent(String path) throws IOException {
+//            BufferedReader reader = null;
+//            try {
+//                URL url = new URL(path);
+//                HttpsURLConnection c = (HttpsURLConnection) url.openConnection();
+//                c.setRequestMethod("GET");
+//                c.setReadTimeout(10000);
+//                c.connect();
+//                reader = new BufferedReader(new InputStreamReader(c.getInputStream()));
+//                StringBuilder buf = new StringBuilder();
+//                String line = null;
+//                while ((line = reader.readLine()) != null) {
+//                    buf.append(line + "\n");
+//                }
+//                return (buf.toString());
+//            } finally {
+//                if (reader != null) {
+//                    reader.close();
+//                }
+//            }
+//        }
     }
 }
 

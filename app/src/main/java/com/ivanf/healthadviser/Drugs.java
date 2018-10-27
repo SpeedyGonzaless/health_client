@@ -3,6 +3,7 @@ package com.ivanf.healthadviser;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.util.JsonReader;
@@ -95,6 +96,7 @@ public class Drugs extends AppCompatActivity implements NavigationView.OnNavigat
                 DrugInfo.img = selectedState.getFlagResource();
                 DrugInfo.Company = selectedState.getCapital();
                 DrugInfo.Descr = selectedState.getDescr();
+
                 startActivity(activityDrugInfo);
                 finish();
             }
