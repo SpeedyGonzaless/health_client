@@ -1,5 +1,6 @@
 package com.ivanf.healthadviser;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -17,6 +18,10 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -67,11 +72,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         // начальная инициализация списка
-        setInitialData();
+        try {
+            setInitialData(this);
+        } catch (JSONException ex)
+        {
+            //bidlo  code
+        } catch (IOException ex)
+        {
+            // bidlo code
+        }
         // получаем элемент ListView
         recipteList = (ListView) findViewById(R.id.recipeList);
         // создаем адаптер
-        RecipeAdapter stateAdapter = new RecipeAdapter(this, R.layout.recipe_item, recipte);
+        RecipeAdapter stateAdapter = new RecipeAdapter(this, R.layout.recipe_item, states);
         // устанавливаем адаптер
         recipteList.setAdapter(stateAdapter);
         // слушатель выбора в списке
@@ -83,16 +96,59 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Recipe selectedState = (Recipe) parent.getItemAtPosition(position);
                 Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedState.getName(),
                         Toast.LENGTH_SHORT).show();
+                Intent activityRecipeInfo;
+                activityRecipeInfo = new Intent(MainActivity.this, RecipeInfo.class);
+                RecipeInfo.Name = selectedState.getName();
+                RecipeInfo.Img = selectedState.getImg();
+                RecipeInfo.Company = selectedState.getCompany();
+                RecipeInfo.Doc = selectedState.getDoc();
+                RecipeInfo.Data_Begin = selectedState.getData_Begin();
+                RecipeInfo.Data_End = selectedState.getData_Begin();
+                RecipeInfo.Use = selectedState.getUse();
+                RecipeInfo.Tutorial = selectedState.getTutorial();
+
+                startActivity(activityRecipeInfo);
+                finish();
             }
         };
         recipteList.setOnItemClickListener(itemListener);
     }
 
-    private void setInitialData(){
-        recipte.add(new Recipe ("Бразилия", "Бразилиа", "http://sportwiki.to/images/e/ee/Kagocel.jpg", "", "", "", "", ""));
-        recipte.add(new Recipe ("fasffs", "Бразилиа", "http://sportwiki.to/images/e/ee/Kagocel.jpg", "", "", "", "", ""));
-        recipte.add(new Recipe ("asf", "Бразилиа", "http://sportwiki.to/images/e/ee/Kagocel.jpg", "", "", "", "", ""));
+    private List<Recipe> states = new ArrayList();
+
+    private void setInitialData(Context context) throws JSONException, IOException {
+        String jsonText = readText(context, R.raw.your_drags);
+        JSONObject jsonRoot = new JSONObject(jsonText);
+        JSONArray arrOfDrags = jsonRoot.getJSONArray("Your_Drugs");
+
+        if(arrOfDrags.length()!=0){
+            findViewById(R.id.textView2).setVisibility(View.INVISIBLE);
+        }
+
+        for (int i = 0; i < arrOfDrags.length(); i++) {
+            states.add(new Recipe (((JSONObject)arrOfDrags.get(i)).getString("Name"),
+                    ((JSONObject)arrOfDrags.get(i)).getString("Company"),
+                    ((JSONObject)arrOfDrags.get(i)).getString("img"),
+                    ((JSONObject)arrOfDrags.get(i)).getString("Doc"),
+                    ((JSONObject)arrOfDrags.get(i)).getString("Data_Begin"),
+                    ((JSONObject)arrOfDrags.get(i)).getString("Data_End"),
+                    ((JSONObject)arrOfDrags.get(i)).getString("Use"),
+                    ((JSONObject)arrOfDrags.get(i)).getString("Tutorial")));
+        }
     }
+
+    private static String readText(Context context, int resId) throws IOException {
+        InputStream is = context.getResources().openRawResource(resId);
+        BufferedReader br= new BufferedReader(new InputStreamReader(is));
+        StringBuilder sb= new StringBuilder();
+        String s= null;
+        while((  s = br.readLine())!=null) {
+            sb.append(s);
+            sb.append("\n");
+        }
+        return sb.toString();
+    }
+
 
     @Override
     public void onBackPressed() {

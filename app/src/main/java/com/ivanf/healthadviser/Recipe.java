@@ -45,13 +45,11 @@ public class Recipe {
     public void setImg(String img) {
         this.img = img;
     }
-    public String getDoc() {
-        return this.Doc;
-    }
 
-    public void setDoc(String Doc) {
-        this.Doc = Doc;
-    }
+    public String getDoc() {return this.Doc; }
+
+    public void setDoc(String Doc) {this.Doc = Doc;}
+
     public String getData_Begin() {
         return this.Data_Begin;
     }

@@ -9,14 +9,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-public class DrugInfo extends AppCompatActivity {
-    static public String Name, Company, img, Descr;
-
+public class RecipeInfo extends AppCompatActivity {
+    static public String Name, Company, Img, Doc, Data_Begin, Data_End, Use, Tutorial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drug_info);
+        setContentView(R.layout.activity_recipe_info);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -28,8 +27,6 @@ public class DrugInfo extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-
         AppBarLayout bar = (AppBarLayout) findViewById(R.id.app_bar_rec);
 //        ImageView time = (ImageView) findViewById(R.id.timeImg);
 //        Picasso.get()
@@ -37,10 +34,10 @@ public class DrugInfo extends AppCompatActivity {
 //                .fit()
 //                .into(time);
 
-        TextView name = (TextView) findViewById(R.id.infoText);
+        TextView name = (TextView) findViewById(R.id.infoRecipe);
         name.setText(Name);
 
-        TextView des = (TextView) findViewById(R.id.description_info);
-        des.setText(Descr);
+        TextView Tut = (TextView) findViewById(R.id.Recipe_Descr);
+        Tut.setText(Tutorial);
     }
 }

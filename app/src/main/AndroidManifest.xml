@@ -36,6 +36,10 @@
         <activity
             android:name=".DrugInfo"
             android:label="@string/title_activity_drug_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecipeInfo"
+            android:label="@string/title_activity_recipe_info"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -28,18 +28,20 @@ public class RecipeAdapter extends ArrayAdapter<Recipe> {
 
         View view=inflater.inflate(this.layout, parent, false);
 
-        ImageView flagView = (ImageView) view.findViewById(R.id.flag);
+        ImageView imgView = (ImageView) view.findViewById(R.id.img);
         TextView nameView = (TextView) view.findViewById(R.id.name);
-        TextView capitalView = (TextView) view.findViewById(R.id.capital);
+        TextView companyView = (TextView) view.findViewById(R.id.company);
+        TextView useView = (TextView) view.findViewById(R.id.use);
 
         Recipe state = states.get(position);
 
         Picasso.get()
                 .load(state.getImg())
-                .into(flagView);
+                .into(imgView);
 
         nameView.setText(state.getName());
-        capitalView.setText(state.getCompany());
+        companyView.setText(state.getCompany());
+        useView.setText(state.getUse());
 
         return view;
     }

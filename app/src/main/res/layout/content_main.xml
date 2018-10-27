@@ -8,6 +8,13 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+
+    <ListView
+        android:id="@+id/recipeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="601dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,10 +30,20 @@
             android:textSize="20sp"
             tools:layout_editor_absoluteX="9dp"
             tools:layout_editor_absoluteY="29dp" />
+
     </LinearLayout>
 
-    <ListView android:id="@+id/recipeList"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<fragment-->
+            <!--android:id="@+id/contentFragment"-->
+            <!--android:name="com.ivanf.healthadviser.ProgressFragmebt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="400dp" />-->
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
