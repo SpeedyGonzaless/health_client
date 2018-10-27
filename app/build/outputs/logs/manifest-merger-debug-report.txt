@@ -1,0 +1,248 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\5e9425e85b4f77a422cf4fbd6ed13d13\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\f6461184d79d294311fadbaf570e25f4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\7e539f27922396b79c85c5189ea01355\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\bb1f6ca9265382759c5af843f63ab2bf\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\73aed4b9e59b77ccc98d21b02c40b689\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\12feb597f2a418e84711948ac01db8fd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\0e1a3015c78564ca6c7f64a4cb6a32ef\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\49aad6ce6a3e9438c42873684fbf182d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\956f9a6a1829e02a2c1253866853ce01\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8458cc9c6f4e6d0192bff00c56ba5776\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\145e08a89c3bc5bad4d6cd0afd0da291\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\717962eedfd692e412dda653eb108ce1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\738bd4a0bcd3fff373f3292ab797ee20\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\476f4825bf4fc4f0d99e4ef08eb3feac\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b5861edb63fccff2394de8a6e673e9eb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\e7717a13419c701da4b8f9b179f779dc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\05b9420e557a862db261375db0c24997\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\b7a15dcdd55ec6cc436375850fd46e9e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2b27c06949cff39463aa9ae699bca113\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\684af5e1b318c4a4bc47a3b619f81a8f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\6e8626cf88f993abf9bb2d5c1decf9de\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ce8716d3c5390ed83e167fadcb00f965\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\6a8a1979b03199dfb6501e09ea30829c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\6cb90a823d5ea0eb9dfa80abf76c41f8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\400c831f03e76dff81ab3500dffa7df2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0e3f873d2c5fd5b7d02d53e833c7002e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\a003c116da1ca1feaf03b5776e2cee0a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\6f7195ed5cb6627fda0d298c06ef7b6a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\bf6fbb9721b509941a435e0ba217f76b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0569a8cd5b305e59eac412fca3e10c38\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9d41c40154c77eb4fa511262be04eadb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\27ed2b5514741e499803678f5fcf723a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\953036cada3789b097de8f42da609a51\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\84d7488056d20bccbd2151a680cad932\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:1-47:12
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:8:22-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:10:22-76
+application
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:12:5-45:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\5e9425e85b4f77a422cf4fbd6ed13d13\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\5e9425e85b4f77a422cf4fbd6ed13d13\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\bb1f6ca9265382759c5af843f63ab2bf\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\bb1f6ca9265382759c5af843f63ab2bf\AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:7:5-12:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\6e8626cf88f993abf9bb2d5c1decf9de\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\6e8626cf88f993abf9bb2d5c1decf9de\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ce8716d3c5390ed83e167fadcb00f965\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ce8716d3c5390ed83e167fadcb00f965\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\6e8626cf88f993abf9bb2d5c1decf9de\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:15:9-41
+	android:roundIcon
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:18:9-40
+activity#com.ivanf.healthadviser.LoginActivity
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:19:9-27:20
+	android:label
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:21:13-45
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:20:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:25:27-74
+activity#com.ivanf.healthadviser.MainActivity
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:28:9-31:59
+	android:label
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:30:13-56
+	android:theme
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:29:13-41
+activity#com.ivanf.healthadviser.Drugs
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:32:9-35:59
+	android:label
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:34:13-57
+	android:theme
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:35:13-56
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:33:13-34
+activity#com.ivanf.healthadviser.DrugInfo
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:36:9-39:59
+	android:label
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:38:13-61
+	android:theme
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:39:13-56
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:37:13-37
+activity#com.ivanf.healthadviser.RecipeInfo
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:40:9-43:59
+	android:label
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:42:13-63
+	android:theme
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:43:13-56
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:41:13-39
+activity#com.ivanf.healthadviser.Chat
+ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:44:9-51
+	android:name
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml:44:19-39
+uses-sdk
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\5e9425e85b4f77a422cf4fbd6ed13d13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\5e9425e85b4f77a422cf4fbd6ed13d13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\f6461184d79d294311fadbaf570e25f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\f6461184d79d294311fadbaf570e25f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\7e539f27922396b79c85c5189ea01355\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\7e539f27922396b79c85c5189ea01355\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\bb1f6ca9265382759c5af843f63ab2bf\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\bb1f6ca9265382759c5af843f63ab2bf\AndroidManifest.xml:5:5-7:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\73aed4b9e59b77ccc98d21b02c40b689\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\73aed4b9e59b77ccc98d21b02c40b689\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\12feb597f2a418e84711948ac01db8fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\12feb597f2a418e84711948ac01db8fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\0e1a3015c78564ca6c7f64a4cb6a32ef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\0e1a3015c78564ca6c7f64a4cb6a32ef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\49aad6ce6a3e9438c42873684fbf182d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\49aad6ce6a3e9438c42873684fbf182d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\956f9a6a1829e02a2c1253866853ce01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\956f9a6a1829e02a2c1253866853ce01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8458cc9c6f4e6d0192bff00c56ba5776\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8458cc9c6f4e6d0192bff00c56ba5776\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\145e08a89c3bc5bad4d6cd0afd0da291\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\145e08a89c3bc5bad4d6cd0afd0da291\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\717962eedfd692e412dda653eb108ce1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\717962eedfd692e412dda653eb108ce1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\738bd4a0bcd3fff373f3292ab797ee20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\738bd4a0bcd3fff373f3292ab797ee20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\476f4825bf4fc4f0d99e4ef08eb3feac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\476f4825bf4fc4f0d99e4ef08eb3feac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b5861edb63fccff2394de8a6e673e9eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b5861edb63fccff2394de8a6e673e9eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\e7717a13419c701da4b8f9b179f779dc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\e7717a13419c701da4b8f9b179f779dc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\05b9420e557a862db261375db0c24997\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\05b9420e557a862db261375db0c24997\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\b7a15dcdd55ec6cc436375850fd46e9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\b7a15dcdd55ec6cc436375850fd46e9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2b27c06949cff39463aa9ae699bca113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2b27c06949cff39463aa9ae699bca113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\684af5e1b318c4a4bc47a3b619f81a8f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\684af5e1b318c4a4bc47a3b619f81a8f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\6e8626cf88f993abf9bb2d5c1decf9de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\6e8626cf88f993abf9bb2d5c1decf9de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ce8716d3c5390ed83e167fadcb00f965\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\ce8716d3c5390ed83e167fadcb00f965\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\6a8a1979b03199dfb6501e09ea30829c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\6a8a1979b03199dfb6501e09ea30829c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\6cb90a823d5ea0eb9dfa80abf76c41f8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\6cb90a823d5ea0eb9dfa80abf76c41f8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\400c831f03e76dff81ab3500dffa7df2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\400c831f03e76dff81ab3500dffa7df2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0e3f873d2c5fd5b7d02d53e833c7002e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0e3f873d2c5fd5b7d02d53e833c7002e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\a003c116da1ca1feaf03b5776e2cee0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\a003c116da1ca1feaf03b5776e2cee0a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\6f7195ed5cb6627fda0d298c06ef7b6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\6f7195ed5cb6627fda0d298c06ef7b6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\bf6fbb9721b509941a435e0ba217f76b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\bf6fbb9721b509941a435e0ba217f76b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0569a8cd5b305e59eac412fca3e10c38\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0569a8cd5b305e59eac412fca3e10c38\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9d41c40154c77eb4fa511262be04eadb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9d41c40154c77eb4fa511262be04eadb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\27ed2b5514741e499803678f5fcf723a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\27ed2b5514741e499803678f5fcf723a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\953036cada3789b097de8f42da609a51\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\953036cada3789b097de8f42da609a51\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\84d7488056d20bccbd2151a680cad932\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\84d7488056d20bccbd2151a680cad932\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ivanf\Desktop\HackMoscow\health_client\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ivanf\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\89c621f87a311ce1163e76a1406a7643\AndroidManifest.xml:9:13-64
