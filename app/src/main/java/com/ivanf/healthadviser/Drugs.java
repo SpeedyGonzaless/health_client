@@ -88,7 +88,7 @@ public class Drugs extends AppCompatActivity implements NavigationView.OnNavigat
 
                 // получаем выбранный пункт
                 Drag selectedState = (Drag)parent.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedState.getName(),
+                Toast.makeText(getApplicationContext(), selectedState.getName() + "was chosen",
                         Toast.LENGTH_SHORT).show();
                 Intent activityDrugInfo;
                 activityDrugInfo = new Intent(Drugs.this, DrugInfo.class);
@@ -159,18 +159,23 @@ public class Drugs extends AppCompatActivity implements NavigationView.OnNavigat
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.Main) {
+            Intent activityMainActivity;
+            activityMainActivity = new Intent(Drugs.this, MainActivity.class);
+            startActivity(activityMainActivity);
+            finish();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_chat) {
+            Intent activityMainActivity;
+            activityMainActivity = new Intent(Drugs.this, Chat.class);
+            startActivity(activityMainActivity);
+            finish();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_settings) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_exit) {
+            finish();
+            System.exit(0);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

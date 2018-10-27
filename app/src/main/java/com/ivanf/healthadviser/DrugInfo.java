@@ -1,16 +1,26 @@
 package com.ivanf.healthadviser;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
 public class DrugInfo extends AppCompatActivity {
     static public String Name, Company, img, Descr;
+
+    @Override
+    public void onBackPressed() {
+        Intent activityMainActivity;
+        activityMainActivity = new Intent(DrugInfo.this, Drugs.class);
+        startActivity(activityMainActivity);
+        finish();
+    }
 
 
     @Override
@@ -41,6 +51,6 @@ public class DrugInfo extends AppCompatActivity {
         name.setText(Name);
 
         TextView des = (TextView) findViewById(R.id.description_info);
-        des.setText(Descr);
+        des.setText(Html.fromHtml(Descr));
     }
 }

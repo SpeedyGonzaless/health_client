@@ -1,5 +1,6 @@
 package com.ivanf.healthadviser;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -11,6 +12,14 @@ import android.widget.TextView;
 
 public class RecipeInfo extends AppCompatActivity {
     static public String Name, Company, Img, Doc, Data_Begin, Data_End, Use, Tutorial;
+
+    @Override
+    public void onBackPressed() {
+        Intent activityMainActivity;
+        activityMainActivity = new Intent(RecipeInfo.this, MainActivity.class);
+        startActivity(activityMainActivity);
+        finish();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
