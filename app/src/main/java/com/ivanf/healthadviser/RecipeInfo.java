@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
@@ -43,10 +44,19 @@ public class RecipeInfo extends AppCompatActivity {
 //                .fit()
 //                .into(time);
 
+
         TextView name = (TextView) findViewById(R.id.infoRecipe);
         name.setText(Name);
 
         TextView Tut = (TextView) findViewById(R.id.Recipe_Descr);
-        Tut.setText(Tutorial);
+
+        String text = "<p>Next appointment: " + "<b>" + Use + "</b></p>";
+        text += "<p>Date of begin: " + "<ul>" + Data_Begin + "</ul></p>";
+        text += "<p>Date of end: " + "<ul>" + Data_End + "</ul></p>";
+        text += "<p>How to use: " + Tutorial + "</p>";
+
+        text += "<p></p><p>dr. " + Doc + "</p>";
+
+        Tut.setText(Html.fromHtml(text));
     }
 }
