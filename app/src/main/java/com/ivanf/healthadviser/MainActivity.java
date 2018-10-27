@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 // получаем выбранный пункт
                 Recipe selectedState = (Recipe) parent.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedState.getName(),
+                Toast.makeText(getApplicationContext(), selectedState.getName() + "was chosen",
                         Toast.LENGTH_SHORT).show();
                 Intent activityRecipeInfo;
                 activityRecipeInfo = new Intent(MainActivity.this, RecipeInfo.class);
@@ -197,16 +197,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(activityMainActivity);
             finish();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_chat) {
+            Intent activityMainActivity;
+            activityMainActivity = new Intent(MainActivity.this, Chat.class);
+            startActivity(activityMainActivity);
+            finish();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_settings) {
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_exit) {
+            finish();
+            System.exit(0);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

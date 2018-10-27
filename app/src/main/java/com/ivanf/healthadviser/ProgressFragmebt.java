@@ -71,8 +71,6 @@ public class ProgressFragmebt extends Fragment {
             contentText=content;
             contentView.setText(content);
             webView.loadData(content, "text/html; charset=utf-8", "utf-8");
-            Toast.makeText(getActivity(), content, Toast.LENGTH_SHORT)
-                    .show();
 
             String kek = content.substring(31, content.length()-8);
             Chat.key = kek;
