@@ -44,7 +44,8 @@ public class ProgressFragmebt extends Fragment {
 
         if(contentText==null){
             contentView.setText("Загрузка...");
-            new ProgressTask().execute("http://68.183.104.168:8888/connect/");
+            new ProgressTask().execute("http://68.183.104.168:8888/login/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22password%22:%20%22123456%22%7D");
+
         }
 
         return view;
@@ -70,8 +71,11 @@ public class ProgressFragmebt extends Fragment {
             contentText=content;
             contentView.setText(content);
             webView.loadData(content, "text/html; charset=utf-8", "utf-8");
-            Toast.makeText(getActivity(), "Данные загружены", Toast.LENGTH_SHORT)
+            Toast.makeText(getActivity(), content, Toast.LENGTH_SHORT)
                     .show();
+
+            String kek = content.substring(31, content.length()-8);
+            Chat.key = kek;
         }
 
         private String getContent(String path) throws IOException {

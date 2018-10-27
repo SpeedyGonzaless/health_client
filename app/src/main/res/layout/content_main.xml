@@ -38,11 +38,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <!--<fragment-->
-            <!--android:id="@+id/contentFragment"-->
-            <!--android:name="com.ivanf.healthadviser.ProgressFragmebt"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="400dp" />-->
+        <fragment
+            android:id="@+id/contentFragment"
+            android:name="com.ivanf.healthadviser.ProgressFragmebt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
 
     </LinearLayout>
 
