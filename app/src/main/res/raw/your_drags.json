@@ -1,0 +1,24 @@
+{
+  "Your_Drugs": [
+    {
+      "Name": "No-Spa",
+      "Company": "Sanofi",
+      "img": "https://i.ebayimg.com/images/g/nxUAAOSwpLdZ0PJX/s-l300.jpg",
+      "Doc" : "Sara",
+      "Data_Begin" : "26.10.2018",
+      "Data_End" : "30.10.2018",
+      "Use" : "10am and 7pm",
+      "Tutorial" : "After eating, twice a day, dissolve"
+    },
+    {
+      "Name": "Xarelto",
+      "Company": "Bayer",
+      "img": "https://2f4izj3opteu3l5obc1sh0bb-wpengine.netdna-ssl.com/wp-content/uploads/sites/14/2016/11/Xarelto-Big-image-1.png",
+      "Doc" : "Max",
+      "Data_Begin" : "27.10.2018",
+      "Data_End" : "02.11.2018",
+      "Use" : "3pm",
+      "Tutorial" : "Before eating, with water"
+    }
+  ]
+}
