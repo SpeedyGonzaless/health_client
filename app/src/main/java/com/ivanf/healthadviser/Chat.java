@@ -15,8 +15,11 @@ public class Chat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
+        String ping = "http://68.183.104.168:8888/start_health_test/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key + "%22%7D";
+
         TextView q = (TextView) findViewById(R.id.questionText);
-        q.setText(key);
+        ChatFragment.me.question = q;
+        ChatFragment.me.GO(ping);
     }
 
     @Override

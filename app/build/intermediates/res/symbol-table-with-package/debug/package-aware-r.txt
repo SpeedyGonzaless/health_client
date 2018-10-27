@@ -1100,7 +1100,9 @@ id collapseActionView
 id company
 id container
 id content
+id contentChat
 id contentFragment
+id contentFragmentChat
 id contentPanel
 id coordinator
 id custom
@@ -1283,6 +1285,7 @@ id useLogo
 id view_offset_helper
 id visible
 id webView
+id webViewChat
 id withText
 id wrap
 id wrap_content
@@ -1360,6 +1363,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout drag_item
+layout fragment_chat
 layout fragment_progress_fragmebt
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
