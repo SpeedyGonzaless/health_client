@@ -44,14 +44,14 @@ public class ProgressFragmebt extends Fragment {
 
         if(contentText==null){
             contentView.setText("Загрузка...");
-            new ProgressTask().execute("http://68.183.104.168:8888/login/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22password%22:%20%22123456%22%7D");
+            new ProgressTask().execute("http://68.183.104.168:8887/login/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22password%22:%20%22123456%22%7D");
 
         }
 
         return view;
     }
 
-    private class ProgressTask extends AsyncTask<String, Void, String> {
+    class ProgressTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... path) {
 
@@ -74,6 +74,9 @@ public class ProgressFragmebt extends Fragment {
 
             String kek = content.substring(31, content.length()-8);
             Chat.key = kek;
+
+//            Toast.makeText(getActivity(), content, Toast.LENGTH_SHORT)
+//                    .show();
         }
 
         private String getContent(String path) throws IOException {
@@ -83,6 +86,7 @@ public class ProgressFragmebt extends Fragment {
                 HttpURLConnection c=(HttpURLConnection)url.openConnection();
                 c.setRequestMethod("GET");
                 c.setReadTimeout(10000);
+                c.connect();
                 c.connect();
                 reader= new BufferedReader(new InputStreamReader(c.getInputStream()));
                 StringBuilder buf=new StringBuilder();
