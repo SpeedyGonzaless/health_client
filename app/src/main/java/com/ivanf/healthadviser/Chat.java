@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -18,6 +19,8 @@ public class Chat extends AppCompatActivity {
     public static String key, quest, result;
     public static int number;
     public static TextView textQ;
+    public static Button sub;
+    public static SeekBar line;
     boolean first = true;
 
     static public ImageView addsImg;
@@ -34,6 +37,8 @@ public class Chat extends AppCompatActivity {
         addsImg = (ImageView) findViewById(R.id.imageAdds);
         nameAdds = (TextView) findViewById(R.id.addsName);
         companyAdds = (TextView) findViewById(R.id.addsComp);
+        sub = (Button) findViewById(R.id.subButton);
+        line = (SeekBar) findViewById(R.id.seekBar);
 
         String ping = "http://68.183.104.168:8888/start_health_test/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key + "%22%7D";
 
@@ -56,6 +61,15 @@ public class Chat extends AppCompatActivity {
                 ChatFragment.me.GO(getQuestion);
                 first = false;
             }
+        }
+        else if (Chat.sub.getText() == "Are you sure?"){
+            Intent main;
+            main = new Intent(Chat.this, MainActivity.class);
+
+            startActivity(main);
+            finish();
+        } else {
+            Chat.sub.setText("Are you sure?");
         }
     }
 static int POWER = -1;

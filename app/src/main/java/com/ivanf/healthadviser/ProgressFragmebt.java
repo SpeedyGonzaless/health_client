@@ -75,8 +75,8 @@ public class ProgressFragmebt extends Fragment {
             String kek = content.substring(31, content.length()-8);
             Chat.key = kek;
 
-            Toast.makeText(getActivity(), content, Toast.LENGTH_SHORT)
-                    .show();
+//            Toast.makeText(getActivity(), content, Toast.LENGTH_SHORT)
+//                    .show();
         }
 
         private String getContent(String path) throws IOException {

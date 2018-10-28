@@ -1,6 +1,8 @@
 package com.ivanf.healthadviser;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -79,6 +81,7 @@ public class ChatFragment  extends Fragment {
 
             return content;
         }
+        @SuppressLint("ResourceAsColor")
         @Override
         protected void onPostExecute(String content) {
 
@@ -125,6 +128,12 @@ public class ChatFragment  extends Fragment {
                 else if (input.contains("diagnosis") && !input.contains("NaN") && !input.contains("nan")) { // Poluchenie res
                     Chat.result = "Sorry, but you have " + input.substring(30, input.length() - 8);
                     Chat.textQ.setText( Chat.result);
+
+                    Chat.line.setVisibility(View.INVISIBLE);
+
+                    Chat.sub.setText("Exit");
+                    Chat.sub.setBackgroundColor(Color.rgb(216,27,96));
+                    Chat.sub.setHeight(350);
 
                     Chat.nameAdds.setVisibility(View.VISIBLE);
                     Chat.companyAdds.setVisibility(View.VISIBLE);

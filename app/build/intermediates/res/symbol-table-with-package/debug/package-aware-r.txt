@@ -1085,7 +1085,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button2
 id buttonPanel
 id cancel_action
 id capital
@@ -1248,6 +1247,7 @@ id standard
 id start
 id status_bar_latest_event_content
 id stretch
+id subButton
 id submenuarrow
 id submit_area
 id tabMode
