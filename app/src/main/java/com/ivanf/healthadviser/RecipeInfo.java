@@ -33,8 +33,11 @@ public class RecipeInfo extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent cahtAct;
+                cahtAct = new Intent(RecipeInfo.this, Chat.class);
+
+                startActivity(cahtAct);
+                finish();
             }
         });
         AppBarLayout bar = (AppBarLayout) findViewById(R.id.app_bar_rec);
@@ -50,7 +53,7 @@ public class RecipeInfo extends AppCompatActivity {
 
         TextView Tut = (TextView) findViewById(R.id.Recipe_Descr);
 
-        String text = "<p>Next appointment: " + "<b>" + Use + "</b></p>";
+        String text = "<p>Next take of medication: " + "<b>" + Use + "</b></p>";
         text += "<p>Date of begin: " + "<ul>" + Data_Begin + "</ul></p>";
         text += "<p>Date of end: " + "<ul>" + Data_End + "</ul></p>";
         text += "<p>How to use: " + Tutorial + "</p>";

@@ -34,13 +34,14 @@ public class Chat extends AppCompatActivity {
         result = "";
         quest = "";
         first = true;
+        ChatFragment.first = true;
         addsImg = (ImageView) findViewById(R.id.imageAdds);
         nameAdds = (TextView) findViewById(R.id.addsName);
         companyAdds = (TextView) findViewById(R.id.addsComp);
         sub = (Button) findViewById(R.id.subButton);
         line = (SeekBar) findViewById(R.id.seekBar);
 
-        String ping = "http://68.183.104.168:8888/start_health_test/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key + "%22%7D";
+        String ping = "http://68.183.104.168:8887/start_health_test/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key + "%22%7D";
 
         textQ = (TextView) findViewById(R.id.questionText);
         ChatFragment.me.GO(ping);
@@ -51,13 +52,14 @@ public class Chat extends AppCompatActivity {
         if (result == "") {
             if (!first) {
                 ///health_test_post_answer/{"username": "<username>", "session_id": "<session_id>", "test_id": "<test_id>", "quesion_number": <number>, "response": <response>}
-                String setResponse = "http://68.183.104.168:8888/health_test_post_answer/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key +
+                String setResponse = "http://68.183.104.168:8887/health_test_post_answer/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key +
                         "%22,%20%22test_id%22:%20%22" + quest + "%22,%20%22question_number%22:%20" + Chat.number + ",%20%22response%22:%20" + getPower() + "%7D";
 
                 ChatFragment.me.GO(setResponse);
 
+
             } else {
-                String getQuestion = "http://68.183.104.168:8888/health_test_get_question/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key + "%22,%20%22test_id%22:%20%22" + quest + "%22,%20%22question_number%22:%20" + Chat.number + "%7D";
+                String getQuestion = "http://68.183.104.168:8887/health_test_get_question/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key + "%22,%20%22test_id%22:%20%22" + quest + "%22,%20%22question_number%22:%20" + Chat.number + "%7D";
                 ChatFragment.me.GO(getQuestion);
                 first = false;
             }
@@ -65,7 +67,7 @@ public class Chat extends AppCompatActivity {
         else if (Chat.sub.getText() == "Are you sure?"){
             Intent main;
             main = new Intent(Chat.this, MainActivity.class);
-
+            result="";
             startActivity(main);
             finish();
         } else {

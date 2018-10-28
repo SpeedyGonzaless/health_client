@@ -44,7 +44,7 @@ public class ProgressFragmebt extends Fragment {
 
         if(contentText==null){
             contentView.setText("Загрузка...");
-            new ProgressTask().execute("http://68.183.104.168:8888/login/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22password%22:%20%22123456%22%7D");
+            new ProgressTask().execute("http://68.183.104.168:8887/login/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22password%22:%20%22123456%22%7D");
 
         }
 
@@ -86,6 +86,7 @@ public class ProgressFragmebt extends Fragment {
                 HttpURLConnection c=(HttpURLConnection)url.openConnection();
                 c.setRequestMethod("GET");
                 c.setReadTimeout(10000);
+                c.connect();
                 c.connect();
                 reader= new BufferedReader(new InputStreamReader(c.getInputStream()));
                 StringBuilder buf=new StringBuilder();

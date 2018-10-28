@@ -70,7 +70,7 @@
                     android:id="@+id/addsComp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="The most podhodahii preporat, becouse ...."
+                    android:text="The most suitable drug."
                     android:textAlignment="textStart"
                     android:visibility="invisible" />
             </LinearLayout>
