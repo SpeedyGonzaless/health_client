@@ -4,9 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Chat extends AppCompatActivity {
 
@@ -16,6 +20,9 @@ public class Chat extends AppCompatActivity {
     public static TextView textQ;
     boolean first = true;
 
+    static public ImageView addsImg;
+    static public TextView nameAdds, companyAdds;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +31,9 @@ public class Chat extends AppCompatActivity {
         result = "";
         quest = "";
         first = true;
+        addsImg = (ImageView) findViewById(R.id.imageAdds);
+        nameAdds = (TextView) findViewById(R.id.addsName);
+        companyAdds = (TextView) findViewById(R.id.addsComp);
 
         String ping = "http://68.183.104.168:8888/start_health_test/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + key + "%22%7D";
 

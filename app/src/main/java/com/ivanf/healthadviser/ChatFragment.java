@@ -10,8 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -109,15 +112,33 @@ public class ChatFragment  extends Fragment {
                     }
                 }
 
-                else if (input.contains("question")) { // Otobrazenie voprossa
+                else if (input.contains("question") && !input.contains("nan")) { // Otobrazenie voprossa
                     input = Chat.getQuestion(input);
                     Chat.textQ.setText(input);
+                } else if (input.contains("question") && input.contains("nan")){
+                    String setResponse = "http://68.183.104.168:8888/health_test_post_answer/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + Chat.key +
+                            "%22,%20%22test_id%22:%20%22" + Chat.quest + "%22,%20%22question_number%22:%20" + Chat.number + ",%20%22response%22:%20" + 0 + "%7D";
+                    GO(setResponse);
                 }
 
                 // result
-                else if (input.contains("diagnosis")) { // Poluchenie res
+                else if (input.contains("diagnosis") && !input.contains("NaN") && !input.contains("nan")) { // Poluchenie res
                     Chat.result = "Sorry, but you have " + input.substring(30, input.length() - 8);
                     Chat.textQ.setText( Chat.result);
+
+                    Chat.nameAdds.setVisibility(View.VISIBLE);
+                    Chat.companyAdds.setVisibility(View.VISIBLE);
+                    Chat.addsImg.setVisibility(View.VISIBLE);
+
+                    Chat.nameAdds.setText("NO-SPA");
+                    Picasso.get()
+                            .load("https://i.ebayimg.com/images/g/nxUAAOSwpLdZ0PJX/s-l300.jpg")
+                            .into(Chat.addsImg);
+
+                } else if (input.contains("diagnosis") && (input.contains("NaN") || input.contains("nan"))){
+                    Chat.number++;
+                    String getQuestion = "http://68.183.104.168:8888/health_test_get_question/%7B%22username%22:%20%22ivan.fil@gmail.com%22,%20%22session_id%22:%20%22" + Chat.key + "%22,%20%22test_id%22:%20%22" + Chat.quest + "%22,%20%22question_number%22:%20" + Chat.number + "%7D";
+                    GO(getQuestion);
                 }
 
                 //if (!input.contains("question"))
